@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task4_CountVowelsTask
+namespace Task4_CountVowels
 {
     internal class Program
     {
