@@ -3,4 +3,5 @@
   <Project Path="Task1_Array_10_000_000/Task1_Array_10_000_000.csproj" Id="63824a58-7b60-4865-b415-c1a74ca494e2" />
   <Project Path="Task2_Array_MaxNum/Task2_Array_MaxNum.csproj" Id="e06b31c2-6403-47da-9985-82518a9f48fd" />
   <Project Path="Task3_Array_Count_BiggerNums/Task3_CountGreaterThanK.csproj" Id="b61d6094-d6f9-4a67-acaa-25138383b5db" />
+  <Project Path="Task4_CountVowelsTask/Task4_CountVowelsTask.csproj" Id="6c3b07e3-6c79-4c4a-92b6-e6d7f0f1cca9" />
 </Solution>
