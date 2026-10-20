@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="261012_Lesson/261012_Lesson.csproj" Id="e81ec710-fd98-45d0-89ac-24c991717822" />
   <Project Path="261013_Lesson_Online/261013_Lesson_Online.csproj" Id="52e088df-16db-4a2e-a303-d6e0eae05580" />
+  <Project Path="261020_Lesson_Task1/261020_Lesson_Task1.csproj" Id="adc85019-4a2f-4aab-b116-33e9ef1474c4" />
   <Project Path="naiden gerov zadachi/naiden gerov zadachi.csproj" />
   <Project Path="Task1_Array_10_000_000/Task1_Array_10_000_000.csproj" Id="63824a58-7b60-4865-b415-c1a74ca494e2" />
   <Project Path="Task2_Array_MaxNum/Task2_Array_MaxNum.csproj" Id="e06b31c2-6403-47da-9985-82518a9f48fd" />
