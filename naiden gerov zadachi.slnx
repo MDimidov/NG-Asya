@@ -20,4 +20,5 @@
   <Project Path="TLArchNUnit_Task2_ElectronicsStore/TLArchNUnit_Task2_ElectronicsStore.csproj" Id="a86ffc38-e3f4-4849-a245-70596bdffd15" />
   <Project Path="TLArchNUnit_Task3_StudentManagement/TLArchNUnit_Task3_StudentManagement.csproj" Id="ca52b25b-b07d-4cff-9743-6cd82e0529f9" />
   <Project Path="TLArchNUnit_Task4_FitnessCenter/TLArchNUnit_Task4_FitnessCenter.csproj" Id="2054cfbd-941d-4cdf-b7a6-0b14b097e3ba" />
+  <Project Path="TLArchNUnit_Task5_MovieTheater/TLArchNUnit_Task5_MovieTheater.csproj" Id="8cb4f5c2-1f76-47a9-9180-685dc327e1f1" />
 </Solution>
