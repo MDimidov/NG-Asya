@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Проектът е конзолно приложение -->
+		<OutputType>Exe</OutputType>
+
+		<!-- Използваме .NET 10 -->
+		<TargetFramework>net10.0</TargetFramework>
+
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Указваме коя е главната програма -->
+		<StartupObject>TLArchNUnit_Task3_StudentManagement.Presentation.Program</StartupObject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Библиотека за писане на NUnit тестове -->
+		<PackageReference Include="NUnit" Version="5.0.0" />
+
+		<!-- Позволява на Visual Studio да открива NUnit тестовете -->
+		<PackageReference Include="NUnit3TestAdapter" Version="6.3.0" />
+
+		<!-- Инструменти за стартиране на тестове -->
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+	</ItemGroup>
+
+</Project>

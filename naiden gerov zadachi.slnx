@@ -18,4 +18,5 @@
   <Project Path="Task5_SumDivisibleBy3Or5/Task5_SumDivisibleBy3Or5.csproj" Id="9577be3b-a053-4ad2-9c42-9bde3246667a" />
   <Project Path="TLArchNUnit_Task1_LibraryManagement/TLArchNUnit_Task1_LibraryManagement.csproj" Id="78ee304a-a416-4d91-ae1b-593ce8241011" />
   <Project Path="TLArchNUnit_Task2_ElectronicsStore/TLArchNUnit_Task2_ElectronicsStore.csproj" Id="a86ffc38-e3f4-4849-a245-70596bdffd15" />
+  <Project Path="TLArchNUnit_Task3_StudentManagement/TLArchNUnit_Task3_StudentManagement.csproj" Id="ca52b25b-b07d-4cff-9743-6cd82e0529f9" />
 </Solution>
