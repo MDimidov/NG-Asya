@@ -17,4 +17,5 @@
   <Project Path="Task4_CountVowelsTask/Task4_CountVowels.csproj" Id="6c3b07e3-6c79-4c4a-92b6-e6d7f0f1cca9" />
   <Project Path="Task5_SumDivisibleBy3Or5/Task5_SumDivisibleBy3Or5.csproj" Id="9577be3b-a053-4ad2-9c42-9bde3246667a" />
   <Project Path="TLArchNUnit_Task1_LibraryManagement/TLArchNUnit_Task1_LibraryManagement.csproj" Id="78ee304a-a416-4d91-ae1b-593ce8241011" />
+  <Project Path="TLArchNUnit_Task2_ElectronicsStore/TLArchNUnit_Task2_ElectronicsStore.csproj" Id="a86ffc38-e3f4-4849-a245-70596bdffd15" />
 </Solution>
