@@ -38,6 +38,7 @@ namespace TLArchNUnit_Task1_LibraryManagement.Data
         public int Pages { get; set; }
 
         // decimal използваме за парични стойности.
+        // Може и double за обучителни цели
         // Например: 15.50 лв.
 
         public decimal Price { get; set; }
