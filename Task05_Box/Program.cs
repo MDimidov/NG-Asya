@@ -7,10 +7,12 @@ namespace Task05_Box
      Създайте шаблонен клас с поле Value от тип T и методи
      SetValue(T value) и GetValue(). Тествайте с int, string, double.
     */
+
+    // Създаваме шаблонен клас с един тип T
     class Box<T>
     {
         // Полето пази една стойност от типа, избран при създаване на Box.
-        public T Value = default!;
+        private T Value { get; set; }
 
         public void SetValue(T value)
         {

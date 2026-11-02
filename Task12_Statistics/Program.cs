@@ -1,84 +1,178 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 namespace Task12_Statistics
 {
     /*
-     Задача 12: Клас Statistics<T> с шаблонни методи
-     AddValue(T value), GetMax<T>() и GetAverage<U>().
-     В C# не можем да обявим втори параметър T в GetMax<T>(),
-     когато класът вече използва T. Затова тук методът е GetMax<U>().
-     За да остане просто, извикваме GetMax<U>() с U = T.
+     Задача 3: Клас Statistics<T>
+
+     Условие:
+     Създайте шаблонен клас Statistics<T>,
+     който съдържа списък от елементи.
+
+     Създайте следните методи:
+
+     1. AddValue(T value)
+        Добавя нов елемент в списъка.
+
+     2. GetMax<U>()
+        Намира най-големия елемент в списъка.
+
+     3. GetAverage<U>()
+        Изчислява средно аритметично.
+
+     Тествайте с int, double, decimal и string.
     */
-    class Statistics<T> where T : IComparable<T>
+
+    class Statistics<T>
     {
+        // Създаваме празен списък.
+        // T определя какъв тип стойности ще съхраняваме.
         private List<T> items = new List<T>();
 
+
+        // Метод за добавяне на нова стойност.
         public void AddValue(T value)
         {
-            items.Add(value); // Съхраняваме следващата стойност.
+            items.Add(value);
         }
 
-        public U GetMax<U>()
-        {
-            if (items.Count == 0)
-            {
-                throw new InvalidOperationException("Списъкът е празен!");
-            }
 
-            T max = items[0]; // Начална максимална стойност.
+        // Метод за намиране на най-голямата стойност.
+
+        public T GetMax<U>()
+        {
+            // Приемаме, че първият елемент е най-голям.
+            T max = items[0];
+
+            // Обхождаме останалите елементи.
             for (int i = 1; i < items.Count; i++)
             {
-                if (items[i].CompareTo(max) > 0)
+                // Проверяваме дали типът на елементите е string.
+                if (typeof(T) == typeof(string))
                 {
-                    max = items[i]; // Намерили сме по-голям елемент.
+                    // Ако имаме текст, сравняваме думите
+                    // според азбучния им ред.
+                    if (string.Compare(items[i]?.ToString(), max?.ToString()) > 0)
+                    {
+                        max = items[i];
+                    }
+                }
+                else
+                {
+                    // Ако имаме числа, ги преобразуваме в double.
+                    double current = Convert.ToDouble(items[i]);
+                    double maximum = Convert.ToDouble(max);
+
+                    // Проверяваме кое число е по-голямо.
+                    if (current > maximum)
+                    {
+                        max = items[i];
+                    }
                 }
             }
 
-            // U трябва да е съвместим с T; в Main използваме същия тип.
-            return (U)(object)max!;
+            // Връщаме най-големия елемент.
+            return max;
         }
 
+
+        // Метод за изчисляване на средно аритметично.
         public double GetAverage<U>()
         {
-            if (items.Count == 0)
+            // Променлива, която пази сбора.
+            double sum = 0;
+
+            // Обхождаме всички елементи.
+            for (int i = 0; i < items.Count; i++)
             {
-                throw new InvalidOperationException("Списъкът е празен!");
+                // Превръщаме текущата стойност в double.
+                double number = Convert.ToDouble(items[i]);
+
+                // Добавяме числото към общия сбор.
+                sum = sum + number;
             }
 
-            double sum = 0;
-            foreach (T item in items)
-            {
-                // Работи с int, double и decimal, но не с обикновен текст.
-                sum += Convert.ToDouble(item);
-            }
-            return sum / items.Count; // Средно = сбор / брой.
+            // Делим сбора на броя елементи.
+            double average = sum / items.Count;
+
+            // Връщаме средното аритметично.
+            return average;
         }
     }
+
 
     internal class Program
     {
         static void Main(string[] args)
         {
+            // ==================================
+            // ПРИМЕР 1: Цели числа (int)
+            // ==================================
+
             Statistics<int> numbers = new Statistics<int>();
+
             numbers.AddValue(10);
             numbers.AddValue(20);
             numbers.AddValue(30);
-            Console.WriteLine("Максимум: " + numbers.GetMax<int>());
+
+            Console.WriteLine("Цели числа:");
+
+            Console.WriteLine("Най-голямо: " + numbers.GetMax<int>());
             Console.WriteLine("Средно: " + numbers.GetAverage<int>());
 
+
+            // ==================================
+            // ПРИМЕР 2: Дробни числа (double)
+            // ==================================
+
             Statistics<double> decimals = new Statistics<double>();
-            decimals.AddValue(1.5);
+
             decimals.AddValue(2.5);
-            Console.WriteLine("Средно double: " + decimals.GetAverage<double>());
+            decimals.AddValue(3.5);
+            decimals.AddValue(6.0);
+
+            Console.WriteLine("Дробни числа:");
+
+            Console.WriteLine("Най-голямо: " + decimals.GetMax<double>());
+            Console.WriteLine("Средно: " + decimals.GetAverage<double>());
+
+
+            // ==================================
+            // ПРИМЕР 3: Числа от тип decimal
+            // ==================================
+
+            Statistics<decimal> prices = new Statistics<decimal>();
+
+            prices.AddValue(10m);
+            prices.AddValue(20m);
+            prices.AddValue(30m);
+
+            Console.WriteLine("Decimal числа:");
+
+            Console.WriteLine("Най-голямо: " + prices.GetMax<decimal>());
+            Console.WriteLine("Средно: " + prices.GetAverage<decimal>());
+
+
+            // ==================================
+            // ПРИМЕР 4: Текст (string)
+            // ==================================
 
             Statistics<string> words = new Statistics<string>();
+
             words.AddValue("Apple");
             words.AddValue("Orange");
             words.AddValue("Banana");
-            // За string максимумът е по реда на сравняване на низове.
-            Console.WriteLine("Максимален текст: " + words.GetMax<string>());
-            // Не извикваме GetAverage за думи - няма смисъл да ги събираме.
+
+            Console.WriteLine("Текстови стойности:");
+
+            // При текст търсим най-голямата
+            // стойност според азбучното сравнение.
+            Console.WriteLine("Най-голямо: " + words.GetMax<string>());
+
+            // Не изчисляваме средно аритметично
+            // на думи, защото те не са числа.
         }
     }
 }

@@ -7,6 +7,8 @@ namespace Task08_Storage
      Задача 8: Клас Storage<T>
      Създайте List<T> items и методи AddItem, RemoveItem, PrintAll.
     */
+
+    // Създаваме шаблонен клас с един тип T
     class Storage<T>
     {
         // private означава, че списъкът е достъпен само вътре в класа.
@@ -24,9 +26,9 @@ namespace Task08_Storage
 
         public void PrintAll()
         {
-            for (int i = 0; i < items.Count; i++)
+            foreach (T item in items)
             {
-                Console.WriteLine(items[i]);
+                Console.WriteLine(item); // Отпечатваме всеки елемент на нов ред.
             }
         }
     }
@@ -44,6 +46,7 @@ namespace Task08_Storage
             storage.PrintAll();
 
             storage.RemoveItem("Maria");
+            
             Console.WriteLine("След премахване:");
             storage.PrintAll();
         }

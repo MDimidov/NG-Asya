@@ -8,8 +8,11 @@ namespace Task07_Calculator
      като използвате Convert.ToDouble(). Тествайте int, double, decimal.
      Важно: преобразуването на decimal към double може да загуби точност.
     */
+
+    // Създаваме шаблонен клас с един тип T
     class Calculator<T>
     {
+        // Convert.ToDouble() преобразува стойностите от тип T към double.
         public double Add(T a, T b)
         {
             // Преобразуваме двете стойности до double и ги събираме.

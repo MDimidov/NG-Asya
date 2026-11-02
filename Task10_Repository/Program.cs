@@ -1,58 +1,72 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 namespace Task10_Repository
 {
     /*
-     Задача 10: Клас Repository<T> с шаблонен метод Find<U>(U key)
-     Съхранявайте обекти и ги намирайте по ключ от различен тип.
-     В учебния пример търсим ученици по int ID или string име.
+     Задача 1: Клас Repository<T> с шаблонен метод за търсене
+
+     Условие:
+     Създайте клас Repository<T>, който съдържа списък items.
+
+     Добавете шаблонен метод Find<U>(U key), който може
+     да приема ключ от различен тип.
+
+     В нашия пример:
+     - Ако ключът е string, търсим ученик по име.
+     - Ако ключът е int, търсим ученик по индекс.
     */
-    class Student
-    {
-        public int Id;
-        public string Name;
-
-        public Student(int id, string name)
-        {
-            Id = id;
-            Name = name;
-        }
-
-        public override string ToString()
-        {
-            // ToString определя как се показва обектът чрез Console.WriteLine.
-            return $"{Id} - {Name}";
-        }
-    }
 
     class Repository<T>
     {
+        // Създаваме празен списък от тип T.
+        // T означава, че можем да съхраняваме различни типове.
         private List<T> items = new List<T>();
 
+        // Метод за добавяне на нов елемент в списъка.
         public void Add(T item)
         {
             items.Add(item);
         }
 
+        // Шаблонен метод за търсене.
+        // U е типът на ключа, по който търсим.
         public void Find<U>(U key)
         {
-            foreach (T item in items)
+            // Проверяваме дали ключът е цяло число.
+            // За това ни помага ключовата дума is, която проверява типа на обекта.
+            if (key is int)
             {
-                // Тук демонстрираме търсене само за обекти Student.
-                if (item is Student student)
+                // Превръщаме ключа в int.
+                int index = Convert.ToInt32(key);
+
+                // Проверяваме дали индексът съществува.
+                if (index >= 0 && index < items.Count)
                 {
-                    // Ако ключът е цяло число, сравняваме го с Id.
-                    if (key is int id && student.Id == id)
+                    Console.WriteLine("Намерен: " + items[index]);
+                }
+                else
+                {
+                    Console.WriteLine("Няма ученик с този индекс!");
+                }
+            }
+            else
+            {
+                // Ако ключът не е число, търсим по стойност.
+
+                // Обхождаме всички елементи.
+                for (int i = 0; i < items.Count; i++)
+                {
+                    // Сравняваме текста на елемента с ключа.
+                    if (items[i]?.ToString() == key?.ToString())
                     {
-                        Console.WriteLine(student);
-                    }
-                    // Ако ключът е текст, сравняваме го с Name.
-                    else if (key is string name && student.Name == name)
-                    {
-                        Console.WriteLine(student);
+                        Console.WriteLine("Намерен: " + items[i]);
+                        return;
                     }
                 }
+
+                Console.WriteLine("Няма намерен ученик!");
             }
         }
     }
@@ -61,15 +75,26 @@ namespace Task10_Repository
     {
         static void Main(string[] args)
         {
-            Repository<Student> students = new Repository<Student>();
-            students.Add(new Student(1, "Ivan"));
-            students.Add(new Student(2, "Maria"));
-            students.Add(new Student(3, "Peter"));
+            // Създаваме хранилище за имена на ученици.
+            Repository<string> students = new Repository<string>();
 
-            Console.WriteLine("Търсене по ID:");
+            // Добавяме ученици.
+            students.Add("Ivan");
+            students.Add("Maria");
+            students.Add("Peter");
+            students.Add("Georgi");
+
+            // Търсим по име (string).
+            students.Find<string>("Maria");
+
+            // Търсим по индекс (int).
             students.Find<int>(2);
-            Console.WriteLine("Търсене по име:");
-            students.Find<string>("Peter");
+
+            // Търсим несъществуващо име.
+            students.Find<string>("Nikolay");
+
+            // Търсим несъществуващ индекс.
+            students.Find<int>(10);
         }
     }
 }

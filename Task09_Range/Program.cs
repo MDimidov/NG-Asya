@@ -8,9 +8,10 @@ namespace Task09_Range
      Проверете дали стойността е в затворения диапазон [Start, End].
      Тествайте int и double.
     */
+
+    // Ограничението where T : IComparable<T> позволява да сравняваме стойности.
     class Range<T> where T : IComparable<T>
     {
-        // Ограничението IComparable<T> позволява да сравняваме стойности.
         public T Start;
         public T End;
 

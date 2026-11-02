@@ -10,6 +10,8 @@ namespace Task04_FindIndex
          Създайте FindIndex<T>(List<T> list, T value), който връща
          индекса на първия намерен елемент или -1, ако липсва.
         */
+
+        // Шаблонният метод FindIndex<T> приема списък и стойност от тип T
         static int FindIndex<T>(List<T> list, T value)
         {
             // Индексите започват от 0, а не от 1.
