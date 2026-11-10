@@ -163,7 +163,7 @@ namespace WinFormsApp1
             // lblNumberRow1
             // 
             lblNumberRow1.AutoSize = true;
-            lblNumberRow1.Location = new Point(50, 104);
+            lblNumberRow1.Location = new Point(54, 104);
             lblNumberRow1.Name = "lblNumberRow1";
             lblNumberRow1.Size = new Size(16, 15);
             lblNumberRow1.TabIndex = 8;
@@ -235,7 +235,7 @@ namespace WinFormsApp1
             // lblNumberRow2
             // 
             lblNumberRow2.AutoSize = true;
-            lblNumberRow2.Location = new Point(50, 133);
+            lblNumberRow2.Location = new Point(54, 133);
             lblNumberRow2.Name = "lblNumberRow2";
             lblNumberRow2.Size = new Size(16, 15);
             lblNumberRow2.TabIndex = 13;
@@ -276,7 +276,7 @@ namespace WinFormsApp1
             // lblNumberRow3
             // 
             lblNumberRow3.AutoSize = true;
-            lblNumberRow3.Location = new Point(50, 162);
+            lblNumberRow3.Location = new Point(54, 162);
             lblNumberRow3.Name = "lblNumberRow3";
             lblNumberRow3.Size = new Size(16, 15);
             lblNumberRow3.TabIndex = 18;
@@ -317,7 +317,7 @@ namespace WinFormsApp1
             // lblNumberRow4
             // 
             lblNumberRow4.AutoSize = true;
-            lblNumberRow4.Location = new Point(50, 191);
+            lblNumberRow4.Location = new Point(54, 191);
             lblNumberRow4.Name = "lblNumberRow4";
             lblNumberRow4.Size = new Size(16, 15);
             lblNumberRow4.TabIndex = 23;
@@ -358,7 +358,7 @@ namespace WinFormsApp1
             // lblNumberRow5
             // 
             lblNumberRow5.AutoSize = true;
-            lblNumberRow5.Location = new Point(50, 220);
+            lblNumberRow5.Location = new Point(54, 220);
             lblNumberRow5.Name = "lblNumberRow5";
             lblNumberRow5.Size = new Size(16, 15);
             lblNumberRow5.TabIndex = 28;
@@ -399,7 +399,7 @@ namespace WinFormsApp1
             // lblNumberRow6
             // 
             lblNumberRow6.AutoSize = true;
-            lblNumberRow6.Location = new Point(50, 249);
+            lblNumberRow6.Location = new Point(54, 249);
             lblNumberRow6.Name = "lblNumberRow6";
             lblNumberRow6.Size = new Size(16, 15);
             lblNumberRow6.TabIndex = 33;
@@ -440,7 +440,7 @@ namespace WinFormsApp1
             // lblNumberRow7
             // 
             lblNumberRow7.AutoSize = true;
-            lblNumberRow7.Location = new Point(50, 278);
+            lblNumberRow7.Location = new Point(54, 278);
             lblNumberRow7.Name = "lblNumberRow7";
             lblNumberRow7.Size = new Size(16, 15);
             lblNumberRow7.TabIndex = 38;
@@ -481,7 +481,7 @@ namespace WinFormsApp1
             // lblNumberRow8
             // 
             lblNumberRow8.AutoSize = true;
-            lblNumberRow8.Location = new Point(50, 307);
+            lblNumberRow8.Location = new Point(54, 307);
             lblNumberRow8.Name = "lblNumberRow8";
             lblNumberRow8.Size = new Size(16, 15);
             lblNumberRow8.TabIndex = 43;
@@ -522,7 +522,7 @@ namespace WinFormsApp1
             // lblNumberRow9
             // 
             lblNumberRow9.AutoSize = true;
-            lblNumberRow9.Location = new Point(50, 336);
+            lblNumberRow9.Location = new Point(54, 336);
             lblNumberRow9.Name = "lblNumberRow9";
             lblNumberRow9.Size = new Size(16, 15);
             lblNumberRow9.TabIndex = 48;
@@ -563,7 +563,7 @@ namespace WinFormsApp1
             // lblNumberRow10
             // 
             lblNumberRow10.AutoSize = true;
-            lblNumberRow10.Location = new Point(50, 365);
+            lblNumberRow10.Location = new Point(51, 365);
             lblNumberRow10.Name = "lblNumberRow10";
             lblNumberRow10.Size = new Size(22, 15);
             lblNumberRow10.TabIndex = 53;
