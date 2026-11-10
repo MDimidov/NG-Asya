@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp1
+namespace WinFormsApp1
 {
     partial class Form1
     {
@@ -28,130 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
-            title = new Label();
-            lbTitleNumber = new Label();
-            lbTitleStock = new Label();
-            lbTitlePrice = new Label();
-            lbTitleQuantity = new Label();
-            lbTtileTotalPrice = new Label();
+            lblTitle = new Label();
+            lblColumnNumber = new Label();
+            lblColumnProduct = new Label();
+            lblColumnUnitPrice = new Label();
+            lblColumnQuantity = new Label();
+            lblColumnRowTotal = new Label();
             tbStockRow1 = new TextBox();
-            lbNumberRow1 = new Label();
+            lblNumberRow1 = new Label();
             tbPriceRow1 = new TextBox();
             tbQuantityRow1 = new TextBox();
             tbTotalPriceRow1 = new TextBox();
             btnSolve = new Button();
-            label1 = new Label();
-            textBox41 = new TextBox();
-            textBox8 = new TextBox();
-            label8 = new Label();
-            textBox7 = new TextBox();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox12 = new TextBox();
-            label9 = new Label();
-            textBox11 = new TextBox();
-            textBox10 = new TextBox();
-            textBox9 = new TextBox();
-            textBox16 = new TextBox();
-            label10 = new Label();
-            textBox15 = new TextBox();
-            textBox14 = new TextBox();
-            textBox13 = new TextBox();
-            textBox20 = new TextBox();
-            label11 = new Label();
-            textBox19 = new TextBox();
-            textBox18 = new TextBox();
-            textBox17 = new TextBox();
-            textBox24 = new TextBox();
-            label12 = new Label();
-            textBox23 = new TextBox();
-            textBox22 = new TextBox();
-            textBox21 = new TextBox();
-            textBox28 = new TextBox();
-            label13 = new Label();
-            textBox27 = new TextBox();
-            textBox26 = new TextBox();
-            textBox25 = new TextBox();
-            textBox32 = new TextBox();
-            label14 = new Label();
-            textBox31 = new TextBox();
-            textBox30 = new TextBox();
-            textBox29 = new TextBox();
-            textBox36 = new TextBox();
-            label15 = new Label();
-            textBox35 = new TextBox();
-            textBox34 = new TextBox();
-            textBox33 = new TextBox();
-            textBox40 = new TextBox();
-            label16 = new Label();
-            textBox39 = new TextBox();
-            textBox38 = new TextBox();
-            textBox37 = new TextBox();
+            lblGrandTotal = new Label();
+            tbGrandTotal = new TextBox();
+            tbStockRow2 = new TextBox();
+            lblNumberRow2 = new Label();
+            tbPriceRow2 = new TextBox();
+            tbQuantityRow2 = new TextBox();
+            tbTotalPriceRow2 = new TextBox();
+            tbStockRow3 = new TextBox();
+            lblNumberRow3 = new Label();
+            tbPriceRow3 = new TextBox();
+            tbQuantityRow3 = new TextBox();
+            tbTotalPriceRow3 = new TextBox();
+            tbStockRow4 = new TextBox();
+            lblNumberRow4 = new Label();
+            tbPriceRow4 = new TextBox();
+            tbQuantityRow4 = new TextBox();
+            tbTotalPriceRow4 = new TextBox();
+            tbStockRow5 = new TextBox();
+            lblNumberRow5 = new Label();
+            tbPriceRow5 = new TextBox();
+            tbQuantityRow5 = new TextBox();
+            tbTotalPriceRow5 = new TextBox();
+            tbStockRow6 = new TextBox();
+            lblNumberRow6 = new Label();
+            tbPriceRow6 = new TextBox();
+            tbQuantityRow6 = new TextBox();
+            tbTotalPriceRow6 = new TextBox();
+            tbStockRow7 = new TextBox();
+            lblNumberRow7 = new Label();
+            tbPriceRow7 = new TextBox();
+            tbQuantityRow7 = new TextBox();
+            tbTotalPriceRow7 = new TextBox();
+            tbStockRow8 = new TextBox();
+            lblNumberRow8 = new Label();
+            tbPriceRow8 = new TextBox();
+            tbQuantityRow8 = new TextBox();
+            tbTotalPriceRow8 = new TextBox();
+            tbStockRow9 = new TextBox();
+            lblNumberRow9 = new Label();
+            tbPriceRow9 = new TextBox();
+            tbQuantityRow9 = new TextBox();
+            tbTotalPriceRow9 = new TextBox();
+            tbStockRow10 = new TextBox();
+            lblNumberRow10 = new Label();
+            tbPriceRow10 = new TextBox();
+            tbQuantityRow10 = new TextBox();
+            tbTotalPriceRow10 = new TextBox();
             SuspendLayout();
             // 
-            // title
+            // lblTitle
             // 
-            title.AccessibleRole = AccessibleRole.TitleBar;
-            title.AutoSize = true;
-            title.BackColor = SystemColors.Control;
-            title.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 1, true);
-            title.ImageAlign = ContentAlignment.MiddleRight;
-            title.Location = new Point(187, 9);
-            title.Name = "title";
-            title.Size = new Size(382, 45);
-            title.TabIndex = 1;
-            title.Text = "Калкулатор за покупка";
-            title.TextAlign = ContentAlignment.TopCenter;
+            lblTitle.AccessibleRole = AccessibleRole.TitleBar;
+            lblTitle.AutoSize = true;
+            lblTitle.BackColor = SystemColors.Control;
+            lblTitle.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 1, true);
+            lblTitle.ImageAlign = ContentAlignment.MiddleRight;
+            lblTitle.Location = new Point(187, 9);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(382, 45);
+            lblTitle.TabIndex = 1;
+            lblTitle.Text = "Калкулатор за покупка";
+            lblTitle.TextAlign = ContentAlignment.TopCenter;
             // 
-            // lbTitleNumber
+            // lblColumnNumber
             // 
-            lbTitleNumber.AutoSize = true;
-            lbTitleNumber.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbTitleNumber.Location = new Point(52, 74);
-            lbTitleNumber.Name = "lbTitleNumber";
-            lbTitleNumber.Size = new Size(21, 15);
-            lbTitleNumber.TabIndex = 2;
-            lbTitleNumber.Text = "№";
+            lblColumnNumber.AutoSize = true;
+            lblColumnNumber.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblColumnNumber.Location = new Point(52, 74);
+            lblColumnNumber.Name = "lblColumnNumber";
+            lblColumnNumber.Size = new Size(21, 15);
+            lblColumnNumber.TabIndex = 2;
+            lblColumnNumber.Text = "№";
             // 
-            // lbTitleStock
+            // lblColumnProduct
             // 
-            lbTitleStock.AutoSize = true;
-            lbTitleStock.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbTitleStock.Location = new Point(197, 74);
-            lbTitleStock.Name = "lbTitleStock";
-            lbTitleStock.Size = new Size(39, 15);
-            lbTitleStock.TabIndex = 3;
-            lbTitleStock.Text = "Стока";
+            lblColumnProduct.AutoSize = true;
+            lblColumnProduct.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblColumnProduct.Location = new Point(197, 74);
+            lblColumnProduct.Name = "lblColumnProduct";
+            lblColumnProduct.Size = new Size(39, 15);
+            lblColumnProduct.TabIndex = 3;
+            lblColumnProduct.Text = "Стока";
             // 
-            // lbTitlePrice
+            // lblColumnUnitPrice
             // 
-            lbTitlePrice.AutoSize = true;
-            lbTitlePrice.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbTitlePrice.Location = new Point(350, 74);
-            lbTitlePrice.Name = "lbTitlePrice";
-            lbTitlePrice.Size = new Size(94, 15);
-            lbTitlePrice.TabIndex = 4;
-            lbTitlePrice.Text = "Единична цена";
+            lblColumnUnitPrice.AutoSize = true;
+            lblColumnUnitPrice.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblColumnUnitPrice.Location = new Point(350, 74);
+            lblColumnUnitPrice.Name = "lblColumnUnitPrice";
+            lblColumnUnitPrice.Size = new Size(94, 15);
+            lblColumnUnitPrice.TabIndex = 4;
+            lblColumnUnitPrice.Text = "Единична цена";
             // 
-            // lbTitleQuantity
+            // lblColumnQuantity
             // 
-            lbTitleQuantity.AutoSize = true;
-            lbTitleQuantity.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbTitleQuantity.Location = new Point(526, 74);
-            lbTitleQuantity.Name = "lbTitleQuantity";
-            lbTitleQuantity.Size = new Size(76, 15);
-            lbTitleQuantity.TabIndex = 5;
-            lbTitleQuantity.Text = "Количество";
+            lblColumnQuantity.AutoSize = true;
+            lblColumnQuantity.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblColumnQuantity.Location = new Point(526, 74);
+            lblColumnQuantity.Name = "lblColumnQuantity";
+            lblColumnQuantity.Size = new Size(76, 15);
+            lblColumnQuantity.TabIndex = 5;
+            lblColumnQuantity.Text = "Количество";
             // 
-            // lbTtileTotalPrice
+            // lblColumnRowTotal
             // 
-            lbTtileTotalPrice.AutoSize = true;
-            lbTtileTotalPrice.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbTtileTotalPrice.Location = new Point(707, 74);
-            lbTtileTotalPrice.Name = "lbTtileTotalPrice";
-            lbTtileTotalPrice.Size = new Size(59, 15);
-            lbTtileTotalPrice.TabIndex = 6;
-            lbTtileTotalPrice.Text = "Стойност";
+            lblColumnRowTotal.AutoSize = true;
+            lblColumnRowTotal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblColumnRowTotal.Location = new Point(707, 74);
+            lblColumnRowTotal.Name = "lblColumnRowTotal";
+            lblColumnRowTotal.Size = new Size(59, 15);
+            lblColumnRowTotal.TabIndex = 6;
+            lblColumnRowTotal.Text = "Стойност";
             // 
             // tbStockRow1
             // 
@@ -160,18 +160,18 @@
             tbStockRow1.Size = new Size(155, 23);
             tbStockRow1.TabIndex = 7;
             // 
-            // lbNumberRow1
+            // lblNumberRow1
             // 
-            lbNumberRow1.AutoSize = true;
-            lbNumberRow1.Location = new Point(50, 104);
-            lbNumberRow1.Name = "lbNumberRow1";
-            lbNumberRow1.Size = new Size(16, 15);
-            lbNumberRow1.TabIndex = 8;
-            lbNumberRow1.Text = "1.";
+            lblNumberRow1.AutoSize = true;
+            lblNumberRow1.Location = new Point(50, 104);
+            lblNumberRow1.Name = "lblNumberRow1";
+            lblNumberRow1.Size = new Size(16, 15);
+            lblNumberRow1.TabIndex = 8;
+            lblNumberRow1.Text = "1.";
             // 
             // tbPriceRow1
             // 
-            tbPriceRow1.Location = new Point(337, 101);
+            tbPriceRow1.Location = new Point(350, 101);
             tbPriceRow1.Name = "tbPriceRow1";
             tbPriceRow1.Size = new Size(94, 23);
             tbPriceRow1.TabIndex = 9;
@@ -188,9 +188,9 @@
             // tbTotalPriceRow1
             // 
             tbTotalPriceRow1.BackColor = SystemColors.ScrollBar;
-            tbTotalPriceRow1.Enabled = false;
             tbTotalPriceRow1.Location = new Point(697, 102);
             tbTotalPriceRow1.Name = "tbTotalPriceRow1";
+            tbTotalPriceRow1.ReadOnly = true;
             tbTotalPriceRow1.Size = new Size(91, 23);
             tbTotalPriceRow1.TabIndex = 11;
             // 
@@ -205,526 +205,527 @@
             btnSolve.UseVisualStyleBackColor = false;
             btnSolve.Click += btnSolve_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.Control;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 1, true);
-            label1.Location = new Point(560, 432);
-            label1.Name = "label1";
-            label1.Size = new Size(101, 21);
-            label1.TabIndex = 58;
-            label1.Text = "Обща сума:";
-            // 
-            // textBox41
-            // 
-            textBox41.BackColor = SystemColors.ScrollBar;
-            textBox41.Enabled = false;
-            textBox41.Location = new Point(667, 432);
-            textBox41.Name = "textBox41";
-            textBox41.Size = new Size(121, 23);
-            textBox41.TabIndex = 59;
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(142, 131);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(155, 23);
-            textBox8.TabIndex = 12;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(50, 133);
-            label8.Name = "label8";
-            label8.Size = new Size(16, 15);
-            label8.TabIndex = 13;
-            label8.Text = "2.";
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(337, 130);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(94, 23);
-            textBox7.TabIndex = 14;
-            textBox7.Text = "0";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(526, 131);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(76, 23);
-            textBox6.TabIndex = 15;
-            textBox6.Text = "0";
-            // 
-            // textBox5
-            // 
-            textBox5.BackColor = SystemColors.ScrollBar;
-            textBox5.Enabled = false;
-            textBox5.Location = new Point(697, 131);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(91, 23);
-            textBox5.TabIndex = 16;
-            // 
-            // textBox12
-            // 
-            textBox12.Location = new Point(142, 160);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(155, 23);
-            textBox12.TabIndex = 17;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(50, 162);
-            label9.Name = "label9";
-            label9.Size = new Size(16, 15);
-            label9.TabIndex = 18;
-            label9.Text = "3.";
-            // 
-            // textBox11
-            // 
-            textBox11.Location = new Point(337, 159);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(94, 23);
-            textBox11.TabIndex = 19;
-            textBox11.Text = "0";
-            // 
-            // textBox10
-            // 
-            textBox10.Location = new Point(526, 160);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(76, 23);
-            textBox10.TabIndex = 20;
-            textBox10.Text = "0";
-            // 
-            // textBox9
-            // 
-            textBox9.BackColor = SystemColors.ScrollBar;
-            textBox9.Enabled = false;
-            textBox9.Location = new Point(697, 160);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(91, 23);
-            textBox9.TabIndex = 21;
-            // 
-            // textBox16
+            // lblGrandTotal
+            // 
+            lblGrandTotal.AutoSize = true;
+            lblGrandTotal.BackColor = SystemColors.Control;
+            lblGrandTotal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 1, true);
+            lblGrandTotal.Location = new Point(560, 432);
+            lblGrandTotal.Name = "lblGrandTotal";
+            lblGrandTotal.Size = new Size(101, 21);
+            lblGrandTotal.TabIndex = 58;
+            lblGrandTotal.Text = "Обща сума:";
+            // 
+            // tbGrandTotal
+            // 
+            tbGrandTotal.BackColor = SystemColors.ScrollBar;
+            tbGrandTotal.Location = new Point(667, 432);
+            tbGrandTotal.Name = "tbGrandTotal";
+            tbGrandTotal.ReadOnly = true;
+            tbGrandTotal.Size = new Size(121, 23);
+            tbGrandTotal.TabIndex = 59;
+            // 
+            // tbStockRow2
+            // 
+            tbStockRow2.Location = new Point(142, 131);
+            tbStockRow2.Name = "tbStockRow2";
+            tbStockRow2.Size = new Size(155, 23);
+            tbStockRow2.TabIndex = 12;
+            // 
+            // lblNumberRow2
+            // 
+            lblNumberRow2.AutoSize = true;
+            lblNumberRow2.Location = new Point(50, 133);
+            lblNumberRow2.Name = "lblNumberRow2";
+            lblNumberRow2.Size = new Size(16, 15);
+            lblNumberRow2.TabIndex = 13;
+            lblNumberRow2.Text = "2.";
+            // 
+            // tbPriceRow2
+            // 
+            tbPriceRow2.Location = new Point(350, 130);
+            tbPriceRow2.Name = "tbPriceRow2";
+            tbPriceRow2.Size = new Size(94, 23);
+            tbPriceRow2.TabIndex = 14;
+            tbPriceRow2.Text = "0";
+            // 
+            // tbQuantityRow2
+            // 
+            tbQuantityRow2.Location = new Point(526, 131);
+            tbQuantityRow2.Name = "tbQuantityRow2";
+            tbQuantityRow2.Size = new Size(76, 23);
+            tbQuantityRow2.TabIndex = 15;
+            tbQuantityRow2.Text = "0";
+            // 
+            // tbTotalPriceRow2
+            // 
+            tbTotalPriceRow2.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow2.Location = new Point(697, 131);
+            tbTotalPriceRow2.Name = "tbTotalPriceRow2";
+            tbTotalPriceRow2.ReadOnly = true;
+            tbTotalPriceRow2.Size = new Size(91, 23);
+            tbTotalPriceRow2.TabIndex = 16;
+            // 
+            // tbStockRow3
+            // 
+            tbStockRow3.Location = new Point(142, 160);
+            tbStockRow3.Name = "tbStockRow3";
+            tbStockRow3.Size = new Size(155, 23);
+            tbStockRow3.TabIndex = 17;
+            // 
+            // lblNumberRow3
+            // 
+            lblNumberRow3.AutoSize = true;
+            lblNumberRow3.Location = new Point(50, 162);
+            lblNumberRow3.Name = "lblNumberRow3";
+            lblNumberRow3.Size = new Size(16, 15);
+            lblNumberRow3.TabIndex = 18;
+            lblNumberRow3.Text = "3.";
+            // 
+            // tbPriceRow3
+            // 
+            tbPriceRow3.Location = new Point(350, 159);
+            tbPriceRow3.Name = "tbPriceRow3";
+            tbPriceRow3.Size = new Size(94, 23);
+            tbPriceRow3.TabIndex = 19;
+            tbPriceRow3.Text = "0";
+            // 
+            // tbQuantityRow3
+            // 
+            tbQuantityRow3.Location = new Point(526, 160);
+            tbQuantityRow3.Name = "tbQuantityRow3";
+            tbQuantityRow3.Size = new Size(76, 23);
+            tbQuantityRow3.TabIndex = 20;
+            tbQuantityRow3.Text = "0";
+            // 
+            // tbTotalPriceRow3
+            // 
+            tbTotalPriceRow3.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow3.Location = new Point(697, 160);
+            tbTotalPriceRow3.Name = "tbTotalPriceRow3";
+            tbTotalPriceRow3.ReadOnly = true;
+            tbTotalPriceRow3.Size = new Size(91, 23);
+            tbTotalPriceRow3.TabIndex = 21;
+            // 
+            // tbStockRow4
             // 
-            textBox16.Location = new Point(142, 189);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(155, 23);
-            textBox16.TabIndex = 22;
+            tbStockRow4.Location = new Point(142, 189);
+            tbStockRow4.Name = "tbStockRow4";
+            tbStockRow4.Size = new Size(155, 23);
+            tbStockRow4.TabIndex = 22;
             // 
-            // label10
+            // lblNumberRow4
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(50, 191);
-            label10.Name = "label10";
-            label10.Size = new Size(16, 15);
-            label10.TabIndex = 23;
-            label10.Text = "4.";
-            // 
-            // textBox15
+            lblNumberRow4.AutoSize = true;
+            lblNumberRow4.Location = new Point(50, 191);
+            lblNumberRow4.Name = "lblNumberRow4";
+            lblNumberRow4.Size = new Size(16, 15);
+            lblNumberRow4.TabIndex = 23;
+            lblNumberRow4.Text = "4.";
+            // 
+            // tbPriceRow4
             // 
-            textBox15.Location = new Point(337, 188);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(94, 23);
-            textBox15.TabIndex = 24;
-            textBox15.Text = "0";
-            // 
-            // textBox14
+            tbPriceRow4.Location = new Point(350, 188);
+            tbPriceRow4.Name = "tbPriceRow4";
+            tbPriceRow4.Size = new Size(94, 23);
+            tbPriceRow4.TabIndex = 24;
+            tbPriceRow4.Text = "0";
+            // 
+            // tbQuantityRow4
             // 
-            textBox14.Location = new Point(526, 189);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(76, 23);
-            textBox14.TabIndex = 25;
-            textBox14.Text = "0";
-            // 
-            // textBox13
+            tbQuantityRow4.Location = new Point(526, 189);
+            tbQuantityRow4.Name = "tbQuantityRow4";
+            tbQuantityRow4.Size = new Size(76, 23);
+            tbQuantityRow4.TabIndex = 25;
+            tbQuantityRow4.Text = "0";
+            // 
+            // tbTotalPriceRow4
             // 
-            textBox13.BackColor = SystemColors.ScrollBar;
-            textBox13.Enabled = false;
-            textBox13.Location = new Point(697, 189);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(91, 23);
-            textBox13.TabIndex = 26;
-            // 
-            // textBox20
+            tbTotalPriceRow4.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow4.Location = new Point(697, 189);
+            tbTotalPriceRow4.Name = "tbTotalPriceRow4";
+            tbTotalPriceRow4.ReadOnly = true;
+            tbTotalPriceRow4.Size = new Size(91, 23);
+            tbTotalPriceRow4.TabIndex = 26;
+            // 
+            // tbStockRow5
             // 
-            textBox20.Location = new Point(142, 218);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(155, 23);
-            textBox20.TabIndex = 27;
-            // 
-            // label11
+            tbStockRow5.Location = new Point(142, 218);
+            tbStockRow5.Name = "tbStockRow5";
+            tbStockRow5.Size = new Size(155, 23);
+            tbStockRow5.TabIndex = 27;
+            // 
+            // lblNumberRow5
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(50, 220);
-            label11.Name = "label11";
-            label11.Size = new Size(16, 15);
-            label11.TabIndex = 28;
-            label11.Text = "5.";
-            // 
-            // textBox19
+            lblNumberRow5.AutoSize = true;
+            lblNumberRow5.Location = new Point(50, 220);
+            lblNumberRow5.Name = "lblNumberRow5";
+            lblNumberRow5.Size = new Size(16, 15);
+            lblNumberRow5.TabIndex = 28;
+            lblNumberRow5.Text = "5.";
+            // 
+            // tbPriceRow5
             // 
-            textBox19.Location = new Point(337, 217);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(94, 23);
-            textBox19.TabIndex = 29;
-            textBox19.Text = "0";
-            // 
-            // textBox18
+            tbPriceRow5.Location = new Point(350, 217);
+            tbPriceRow5.Name = "tbPriceRow5";
+            tbPriceRow5.Size = new Size(94, 23);
+            tbPriceRow5.TabIndex = 29;
+            tbPriceRow5.Text = "0";
+            // 
+            // tbQuantityRow5
             // 
-            textBox18.Location = new Point(526, 218);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(76, 23);
-            textBox18.TabIndex = 30;
-            textBox18.Text = "0";
-            // 
-            // textBox17
+            tbQuantityRow5.Location = new Point(526, 218);
+            tbQuantityRow5.Name = "tbQuantityRow5";
+            tbQuantityRow5.Size = new Size(76, 23);
+            tbQuantityRow5.TabIndex = 30;
+            tbQuantityRow5.Text = "0";
+            // 
+            // tbTotalPriceRow5
             // 
-            textBox17.BackColor = SystemColors.ScrollBar;
-            textBox17.Enabled = false;
-            textBox17.Location = new Point(697, 218);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(91, 23);
-            textBox17.TabIndex = 31;
-            // 
-            // textBox24
-            // 
-            textBox24.Location = new Point(142, 247);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(155, 23);
-            textBox24.TabIndex = 32;
-            // 
-            // label12
+            tbTotalPriceRow5.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow5.Location = new Point(697, 218);
+            tbTotalPriceRow5.Name = "tbTotalPriceRow5";
+            tbTotalPriceRow5.ReadOnly = true;
+            tbTotalPriceRow5.Size = new Size(91, 23);
+            tbTotalPriceRow5.TabIndex = 31;
+            // 
+            // tbStockRow6
+            // 
+            tbStockRow6.Location = new Point(142, 247);
+            tbStockRow6.Name = "tbStockRow6";
+            tbStockRow6.Size = new Size(155, 23);
+            tbStockRow6.TabIndex = 32;
+            // 
+            // lblNumberRow6
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(50, 249);
-            label12.Name = "label12";
-            label12.Size = new Size(16, 15);
-            label12.TabIndex = 33;
-            label12.Text = "6.";
-            // 
-            // textBox23
-            // 
-            textBox23.Location = new Point(337, 246);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(94, 23);
-            textBox23.TabIndex = 34;
-            textBox23.Text = "0";
-            // 
-            // textBox22
-            // 
-            textBox22.Location = new Point(526, 247);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(76, 23);
-            textBox22.TabIndex = 35;
-            textBox22.Text = "0";
-            // 
-            // textBox21
-            // 
-            textBox21.BackColor = SystemColors.ScrollBar;
-            textBox21.Enabled = false;
-            textBox21.Location = new Point(697, 247);
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(91, 23);
-            textBox21.TabIndex = 36;
-            // 
-            // textBox28
-            // 
-            textBox28.Location = new Point(142, 276);
-            textBox28.Name = "textBox28";
-            textBox28.Size = new Size(155, 23);
-            textBox28.TabIndex = 37;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(50, 278);
-            label13.Name = "label13";
-            label13.Size = new Size(16, 15);
-            label13.TabIndex = 38;
-            label13.Text = "7.";
-            // 
-            // textBox27
-            // 
-            textBox27.Location = new Point(337, 275);
-            textBox27.Name = "textBox27";
-            textBox27.Size = new Size(94, 23);
-            textBox27.TabIndex = 39;
-            textBox27.Text = "0";
-            // 
-            // textBox26
-            // 
-            textBox26.Location = new Point(526, 276);
-            textBox26.Name = "textBox26";
-            textBox26.Size = new Size(76, 23);
-            textBox26.TabIndex = 40;
-            textBox26.Text = "0";
-            // 
-            // textBox25
-            // 
-            textBox25.BackColor = SystemColors.ScrollBar;
-            textBox25.Enabled = false;
-            textBox25.Location = new Point(697, 276);
-            textBox25.Name = "textBox25";
-            textBox25.Size = new Size(91, 23);
-            textBox25.TabIndex = 41;
-            // 
-            // textBox32
-            // 
-            textBox32.Location = new Point(142, 305);
-            textBox32.Name = "textBox32";
-            textBox32.Size = new Size(155, 23);
-            textBox32.TabIndex = 42;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(50, 307);
-            label14.Name = "label14";
-            label14.Size = new Size(16, 15);
-            label14.TabIndex = 43;
-            label14.Text = "8.";
-            // 
-            // textBox31
-            // 
-            textBox31.Location = new Point(337, 304);
-            textBox31.Name = "textBox31";
-            textBox31.Size = new Size(94, 23);
-            textBox31.TabIndex = 44;
-            textBox31.Text = "0";
-            // 
-            // textBox30
-            // 
-            textBox30.Location = new Point(526, 305);
-            textBox30.Name = "textBox30";
-            textBox30.Size = new Size(76, 23);
-            textBox30.TabIndex = 45;
-            textBox30.Text = "0";
-            // 
-            // textBox29
-            // 
-            textBox29.BackColor = SystemColors.ScrollBar;
-            textBox29.Enabled = false;
-            textBox29.Location = new Point(697, 305);
-            textBox29.Name = "textBox29";
-            textBox29.Size = new Size(91, 23);
-            textBox29.TabIndex = 46;
-            // 
-            // textBox36
-            // 
-            textBox36.Location = new Point(142, 334);
-            textBox36.Name = "textBox36";
-            textBox36.Size = new Size(155, 23);
-            textBox36.TabIndex = 47;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(50, 336);
-            label15.Name = "label15";
-            label15.Size = new Size(16, 15);
-            label15.TabIndex = 48;
-            label15.Text = "9.";
-            // 
-            // textBox35
-            // 
-            textBox35.Location = new Point(337, 333);
-            textBox35.Name = "textBox35";
-            textBox35.Size = new Size(94, 23);
-            textBox35.TabIndex = 49;
-            textBox35.Text = "0";
-            // 
-            // textBox34
-            // 
-            textBox34.Location = new Point(526, 334);
-            textBox34.Name = "textBox34";
-            textBox34.Size = new Size(76, 23);
-            textBox34.TabIndex = 50;
-            textBox34.Text = "0";
-            // 
-            // textBox33
-            // 
-            textBox33.BackColor = SystemColors.ScrollBar;
-            textBox33.Enabled = false;
-            textBox33.Location = new Point(697, 334);
-            textBox33.Name = "textBox33";
-            textBox33.Size = new Size(91, 23);
-            textBox33.TabIndex = 51;
-            // 
-            // textBox40
-            // 
-            textBox40.Location = new Point(142, 363);
-            textBox40.Name = "textBox40";
-            textBox40.Size = new Size(155, 23);
-            textBox40.TabIndex = 52;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(50, 365);
-            label16.Name = "label16";
-            label16.Size = new Size(22, 15);
-            label16.TabIndex = 53;
-            label16.Text = "10.";
-            // 
-            // textBox39
-            // 
-            textBox39.Location = new Point(337, 362);
-            textBox39.Name = "textBox39";
-            textBox39.Size = new Size(94, 23);
-            textBox39.TabIndex = 54;
-            textBox39.Text = "0";
-            // 
-            // textBox38
-            // 
-            textBox38.Location = new Point(526, 363);
-            textBox38.Name = "textBox38";
-            textBox38.Size = new Size(76, 23);
-            textBox38.TabIndex = 55;
-            textBox38.Text = "0";
-            // 
-            // textBox37
-            // 
-            textBox37.BackColor = SystemColors.ScrollBar;
-            textBox37.Enabled = false;
-            textBox37.Location = new Point(697, 363);
-            textBox37.Name = "textBox37";
-            textBox37.Size = new Size(91, 23);
-            textBox37.TabIndex = 56;
+            lblNumberRow6.AutoSize = true;
+            lblNumberRow6.Location = new Point(50, 249);
+            lblNumberRow6.Name = "lblNumberRow6";
+            lblNumberRow6.Size = new Size(16, 15);
+            lblNumberRow6.TabIndex = 33;
+            lblNumberRow6.Text = "6.";
+            // 
+            // tbPriceRow6
+            // 
+            tbPriceRow6.Location = new Point(350, 246);
+            tbPriceRow6.Name = "tbPriceRow6";
+            tbPriceRow6.Size = new Size(94, 23);
+            tbPriceRow6.TabIndex = 34;
+            tbPriceRow6.Text = "0";
+            // 
+            // tbQuantityRow6
+            // 
+            tbQuantityRow6.Location = new Point(526, 247);
+            tbQuantityRow6.Name = "tbQuantityRow6";
+            tbQuantityRow6.Size = new Size(76, 23);
+            tbQuantityRow6.TabIndex = 35;
+            tbQuantityRow6.Text = "0";
+            // 
+            // tbTotalPriceRow6
+            // 
+            tbTotalPriceRow6.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow6.Location = new Point(697, 247);
+            tbTotalPriceRow6.Name = "tbTotalPriceRow6";
+            tbTotalPriceRow6.ReadOnly = true;
+            tbTotalPriceRow6.Size = new Size(91, 23);
+            tbTotalPriceRow6.TabIndex = 36;
+            // 
+            // tbStockRow7
+            // 
+            tbStockRow7.Location = new Point(142, 276);
+            tbStockRow7.Name = "tbStockRow7";
+            tbStockRow7.Size = new Size(155, 23);
+            tbStockRow7.TabIndex = 37;
+            // 
+            // lblNumberRow7
+            // 
+            lblNumberRow7.AutoSize = true;
+            lblNumberRow7.Location = new Point(50, 278);
+            lblNumberRow7.Name = "lblNumberRow7";
+            lblNumberRow7.Size = new Size(16, 15);
+            lblNumberRow7.TabIndex = 38;
+            lblNumberRow7.Text = "7.";
+            // 
+            // tbPriceRow7
+            // 
+            tbPriceRow7.Location = new Point(350, 275);
+            tbPriceRow7.Name = "tbPriceRow7";
+            tbPriceRow7.Size = new Size(94, 23);
+            tbPriceRow7.TabIndex = 39;
+            tbPriceRow7.Text = "0";
+            // 
+            // tbQuantityRow7
+            // 
+            tbQuantityRow7.Location = new Point(526, 276);
+            tbQuantityRow7.Name = "tbQuantityRow7";
+            tbQuantityRow7.Size = new Size(76, 23);
+            tbQuantityRow7.TabIndex = 40;
+            tbQuantityRow7.Text = "0";
+            // 
+            // tbTotalPriceRow7
+            // 
+            tbTotalPriceRow7.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow7.Location = new Point(697, 276);
+            tbTotalPriceRow7.Name = "tbTotalPriceRow7";
+            tbTotalPriceRow7.ReadOnly = true;
+            tbTotalPriceRow7.Size = new Size(91, 23);
+            tbTotalPriceRow7.TabIndex = 41;
+            // 
+            // tbStockRow8
+            // 
+            tbStockRow8.Location = new Point(142, 305);
+            tbStockRow8.Name = "tbStockRow8";
+            tbStockRow8.Size = new Size(155, 23);
+            tbStockRow8.TabIndex = 42;
+            // 
+            // lblNumberRow8
+            // 
+            lblNumberRow8.AutoSize = true;
+            lblNumberRow8.Location = new Point(50, 307);
+            lblNumberRow8.Name = "lblNumberRow8";
+            lblNumberRow8.Size = new Size(16, 15);
+            lblNumberRow8.TabIndex = 43;
+            lblNumberRow8.Text = "8.";
+            // 
+            // tbPriceRow8
+            // 
+            tbPriceRow8.Location = new Point(350, 304);
+            tbPriceRow8.Name = "tbPriceRow8";
+            tbPriceRow8.Size = new Size(94, 23);
+            tbPriceRow8.TabIndex = 44;
+            tbPriceRow8.Text = "0";
+            // 
+            // tbQuantityRow8
+            // 
+            tbQuantityRow8.Location = new Point(526, 305);
+            tbQuantityRow8.Name = "tbQuantityRow8";
+            tbQuantityRow8.Size = new Size(76, 23);
+            tbQuantityRow8.TabIndex = 45;
+            tbQuantityRow8.Text = "0";
+            // 
+            // tbTotalPriceRow8
+            // 
+            tbTotalPriceRow8.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow8.Location = new Point(697, 305);
+            tbTotalPriceRow8.Name = "tbTotalPriceRow8";
+            tbTotalPriceRow8.ReadOnly = true;
+            tbTotalPriceRow8.Size = new Size(91, 23);
+            tbTotalPriceRow8.TabIndex = 46;
+            // 
+            // tbStockRow9
+            // 
+            tbStockRow9.Location = new Point(142, 334);
+            tbStockRow9.Name = "tbStockRow9";
+            tbStockRow9.Size = new Size(155, 23);
+            tbStockRow9.TabIndex = 47;
+            // 
+            // lblNumberRow9
+            // 
+            lblNumberRow9.AutoSize = true;
+            lblNumberRow9.Location = new Point(50, 336);
+            lblNumberRow9.Name = "lblNumberRow9";
+            lblNumberRow9.Size = new Size(16, 15);
+            lblNumberRow9.TabIndex = 48;
+            lblNumberRow9.Text = "9.";
+            // 
+            // tbPriceRow9
+            // 
+            tbPriceRow9.Location = new Point(350, 333);
+            tbPriceRow9.Name = "tbPriceRow9";
+            tbPriceRow9.Size = new Size(94, 23);
+            tbPriceRow9.TabIndex = 49;
+            tbPriceRow9.Text = "0";
+            // 
+            // tbQuantityRow9
+            // 
+            tbQuantityRow9.Location = new Point(526, 334);
+            tbQuantityRow9.Name = "tbQuantityRow9";
+            tbQuantityRow9.Size = new Size(76, 23);
+            tbQuantityRow9.TabIndex = 50;
+            tbQuantityRow9.Text = "0";
+            // 
+            // tbTotalPriceRow9
+            // 
+            tbTotalPriceRow9.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow9.Location = new Point(697, 334);
+            tbTotalPriceRow9.Name = "tbTotalPriceRow9";
+            tbTotalPriceRow9.ReadOnly = true;
+            tbTotalPriceRow9.Size = new Size(91, 23);
+            tbTotalPriceRow9.TabIndex = 51;
+            // 
+            // tbStockRow10
+            // 
+            tbStockRow10.Location = new Point(142, 363);
+            tbStockRow10.Name = "tbStockRow10";
+            tbStockRow10.Size = new Size(155, 23);
+            tbStockRow10.TabIndex = 52;
+            // 
+            // lblNumberRow10
+            // 
+            lblNumberRow10.AutoSize = true;
+            lblNumberRow10.Location = new Point(50, 365);
+            lblNumberRow10.Name = "lblNumberRow10";
+            lblNumberRow10.Size = new Size(22, 15);
+            lblNumberRow10.TabIndex = 53;
+            lblNumberRow10.Text = "10.";
+            // 
+            // tbPriceRow10
+            // 
+            tbPriceRow10.Location = new Point(350, 362);
+            tbPriceRow10.Name = "tbPriceRow10";
+            tbPriceRow10.Size = new Size(94, 23);
+            tbPriceRow10.TabIndex = 54;
+            tbPriceRow10.Text = "0";
+            // 
+            // tbQuantityRow10
+            // 
+            tbQuantityRow10.Location = new Point(526, 363);
+            tbQuantityRow10.Name = "tbQuantityRow10";
+            tbQuantityRow10.Size = new Size(76, 23);
+            tbQuantityRow10.TabIndex = 55;
+            tbQuantityRow10.Text = "0";
+            // 
+            // tbTotalPriceRow10
+            // 
+            tbTotalPriceRow10.BackColor = SystemColors.ScrollBar;
+            tbTotalPriceRow10.Location = new Point(697, 363);
+            tbTotalPriceRow10.Name = "tbTotalPriceRow10";
+            tbTotalPriceRow10.ReadOnly = true;
+            tbTotalPriceRow10.Size = new Size(91, 23);
+            tbTotalPriceRow10.TabIndex = 56;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 492);
-            Controls.Add(textBox41);
-            Controls.Add(label1);
+            Controls.Add(tbGrandTotal);
+            Controls.Add(lblGrandTotal);
             Controls.Add(btnSolve);
-            Controls.Add(textBox37);
-            Controls.Add(textBox38);
-            Controls.Add(textBox39);
-            Controls.Add(label16);
-            Controls.Add(textBox40);
-            Controls.Add(textBox33);
-            Controls.Add(textBox34);
-            Controls.Add(textBox35);
-            Controls.Add(label15);
-            Controls.Add(textBox36);
-            Controls.Add(textBox29);
-            Controls.Add(textBox30);
-            Controls.Add(textBox31);
-            Controls.Add(label14);
-            Controls.Add(textBox32);
-            Controls.Add(textBox25);
-            Controls.Add(textBox26);
-            Controls.Add(textBox27);
-            Controls.Add(label13);
-            Controls.Add(textBox28);
-            Controls.Add(textBox21);
-            Controls.Add(textBox22);
-            Controls.Add(textBox23);
-            Controls.Add(label12);
-            Controls.Add(textBox24);
-            Controls.Add(textBox17);
-            Controls.Add(textBox18);
-            Controls.Add(textBox19);
-            Controls.Add(label11);
-            Controls.Add(textBox20);
-            Controls.Add(textBox13);
-            Controls.Add(textBox14);
-            Controls.Add(textBox15);
-            Controls.Add(label10);
-            Controls.Add(textBox16);
-            Controls.Add(textBox9);
-            Controls.Add(textBox10);
-            Controls.Add(textBox11);
-            Controls.Add(label9);
-            Controls.Add(textBox12);
-            Controls.Add(textBox5);
-            Controls.Add(textBox6);
-            Controls.Add(textBox7);
-            Controls.Add(label8);
-            Controls.Add(textBox8);
+            Controls.Add(tbTotalPriceRow10);
+            Controls.Add(tbQuantityRow10);
+            Controls.Add(tbPriceRow10);
+            Controls.Add(lblNumberRow10);
+            Controls.Add(tbStockRow10);
+            Controls.Add(tbTotalPriceRow9);
+            Controls.Add(tbQuantityRow9);
+            Controls.Add(tbPriceRow9);
+            Controls.Add(lblNumberRow9);
+            Controls.Add(tbStockRow9);
+            Controls.Add(tbTotalPriceRow8);
+            Controls.Add(tbQuantityRow8);
+            Controls.Add(tbPriceRow8);
+            Controls.Add(lblNumberRow8);
+            Controls.Add(tbStockRow8);
+            Controls.Add(tbTotalPriceRow7);
+            Controls.Add(tbQuantityRow7);
+            Controls.Add(tbPriceRow7);
+            Controls.Add(lblNumberRow7);
+            Controls.Add(tbStockRow7);
+            Controls.Add(tbTotalPriceRow6);
+            Controls.Add(tbQuantityRow6);
+            Controls.Add(tbPriceRow6);
+            Controls.Add(lblNumberRow6);
+            Controls.Add(tbStockRow6);
+            Controls.Add(tbTotalPriceRow5);
+            Controls.Add(tbQuantityRow5);
+            Controls.Add(tbPriceRow5);
+            Controls.Add(lblNumberRow5);
+            Controls.Add(tbStockRow5);
+            Controls.Add(tbTotalPriceRow4);
+            Controls.Add(tbQuantityRow4);
+            Controls.Add(tbPriceRow4);
+            Controls.Add(lblNumberRow4);
+            Controls.Add(tbStockRow4);
+            Controls.Add(tbTotalPriceRow3);
+            Controls.Add(tbQuantityRow3);
+            Controls.Add(tbPriceRow3);
+            Controls.Add(lblNumberRow3);
+            Controls.Add(tbStockRow3);
+            Controls.Add(tbTotalPriceRow2);
+            Controls.Add(tbQuantityRow2);
+            Controls.Add(tbPriceRow2);
+            Controls.Add(lblNumberRow2);
+            Controls.Add(tbStockRow2);
             Controls.Add(tbTotalPriceRow1);
             Controls.Add(tbQuantityRow1);
             Controls.Add(tbPriceRow1);
-            Controls.Add(lbNumberRow1);
+            Controls.Add(lblNumberRow1);
             Controls.Add(tbStockRow1);
-            Controls.Add(lbTtileTotalPrice);
-            Controls.Add(lbTitleQuantity);
-            Controls.Add(lbTitlePrice);
-            Controls.Add(lbTitleStock);
-            Controls.Add(lbTitleNumber);
-            Controls.Add(title);
+            Controls.Add(lblColumnRowTotal);
+            Controls.Add(lblColumnQuantity);
+            Controls.Add(lblColumnUnitPrice);
+            Controls.Add(lblColumnProduct);
+            Controls.Add(lblColumnNumber);
+            Controls.Add(lblTitle);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 1, true);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Моята покупка";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label title;
-        private Label lbTitleNumber;
-        private Label lbTitleStock;
-        private Label lbTitlePrice;
-        private Label lbTitleQuantity;
-        private Label lbTtileTotalPrice;
+        private Label lblTitle;
+        private Label lblColumnNumber;
+        private Label lblColumnProduct;
+        private Label lblColumnUnitPrice;
+        private Label lblColumnQuantity;
+        private Label lblColumnRowTotal;
         private TextBox tbStockRow1;
-        private Label lbNumberRow1;
+        private Label lblNumberRow1;
         private TextBox tbPriceRow1;
         private TextBox tbQuantityRow1;
         private TextBox tbTotalPriceRow1;
         private Button btnSolve;
-        private Label label1;
-        private TextBox textBox41;
-        private TextBox textBox8;
-        private Label label8;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox12;
-        private Label label9;
-        private TextBox textBox11;
-        private TextBox textBox10;
-        private TextBox textBox9;
-        private TextBox textBox16;
-        private Label label10;
-        private TextBox textBox15;
-        private TextBox textBox14;
-        private TextBox textBox13;
-        private TextBox textBox20;
-        private Label label11;
-        private TextBox textBox19;
-        private TextBox textBox18;
-        private TextBox textBox17;
-        private TextBox textBox24;
-        private Label label12;
-        private TextBox textBox23;
-        private TextBox textBox22;
-        private TextBox textBox21;
-        private TextBox textBox28;
-        private Label label13;
-        private TextBox textBox27;
-        private TextBox textBox26;
-        private TextBox textBox25;
-        private TextBox textBox32;
-        private Label label14;
-        private TextBox textBox31;
-        private TextBox textBox30;
-        private TextBox textBox29;
-        private TextBox textBox36;
-        private Label label15;
-        private TextBox textBox35;
-        private TextBox textBox34;
-        private TextBox textBox33;
-        private TextBox textBox40;
-        private Label label16;
-        private TextBox textBox39;
-        private TextBox textBox38;
-        private TextBox textBox37;
+        private Label lblGrandTotal;
+        private TextBox tbGrandTotal;
+        private TextBox tbStockRow2;
+        private Label lblNumberRow2;
+        private TextBox tbPriceRow2;
+        private TextBox tbQuantityRow2;
+        private TextBox tbTotalPriceRow2;
+        private TextBox tbStockRow3;
+        private Label lblNumberRow3;
+        private TextBox tbPriceRow3;
+        private TextBox tbQuantityRow3;
+        private TextBox tbTotalPriceRow3;
+        private TextBox tbStockRow4;
+        private Label lblNumberRow4;
+        private TextBox tbPriceRow4;
+        private TextBox tbQuantityRow4;
+        private TextBox tbTotalPriceRow4;
+        private TextBox tbStockRow5;
+        private Label lblNumberRow5;
+        private TextBox tbPriceRow5;
+        private TextBox tbQuantityRow5;
+        private TextBox tbTotalPriceRow5;
+        private TextBox tbStockRow6;
+        private Label lblNumberRow6;
+        private TextBox tbPriceRow6;
+        private TextBox tbQuantityRow6;
+        private TextBox tbTotalPriceRow6;
+        private TextBox tbStockRow7;
+        private Label lblNumberRow7;
+        private TextBox tbPriceRow7;
+        private TextBox tbQuantityRow7;
+        private TextBox tbTotalPriceRow7;
+        private TextBox tbStockRow8;
+        private Label lblNumberRow8;
+        private TextBox tbPriceRow8;
+        private TextBox tbQuantityRow8;
+        private TextBox tbTotalPriceRow8;
+        private TextBox tbStockRow9;
+        private Label lblNumberRow9;
+        private TextBox tbPriceRow9;
+        private TextBox tbQuantityRow9;
+        private TextBox tbTotalPriceRow9;
+        private TextBox tbStockRow10;
+        private Label lblNumberRow10;
+        private TextBox tbPriceRow10;
+        private TextBox tbQuantityRow10;
+        private TextBox tbTotalPriceRow10;
     }
 }
+
